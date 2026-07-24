@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection 01</title>
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'pbc5qtm',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <link rel="stylesheet" href="collection.css">
+  <script src="collection.js" defer></script>
+</head>
+<body>
+  <a class="site-logo" href="index.html" aria-label="トップページへ">
+    <img src="images/logo/group_f_logowth.png" alt="group F">
+  </a>
+
+  <button class="back-button" type="button" aria-label="前のページに戻る">
+    ←
+  </button>
+
+  <button
+    class="menu-button"
+    type="button"
+    aria-label="メニューを開く"
+    aria-expanded="false"
+    aria-controls="global-menu"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="global-menu" class="global-menu" aria-label="メインメニュー">
+    <a href="index.html#about-title">ABOUT</a>
+    <a href="index.html#collection-title">COLLECTION</a>
+  </nav>
+
+  <main id="collection-detail" data-collection-id="m03-02">
+    <p id="loading-message">データを読み込んでいます。</p>
+
+    <article id="collection-content" hidden>
+      
+
+      <img id="image-1" class="scroll-reveal" src="" alt="">
+
+      <div class="image-comment-row">
+        <img id="image-2" class="scroll-reveal" src="" alt="">
+        <p id="copy" class="scroll-reveal"></p>
+      </div>
+
+      <section class="collection-info">
+        <h2>EXPLANATION</h2>
+
+        <dl class="explanation-list">
+          <dt>Product Name</dt><dd id="product-name"></dd>
+          <dt>Brand</dt><dd id="brand"></dd>
+
+          <dt>Designer</dt><dd id="designer"></dd>
+          
+          <dt>Material</dt><dd id="material"></dd>
+          <dt>Genre</dt><dd id="genre"></dd>
+         <p><a id="item-link" href="">Product Page</a></p>
+
+        </dl>
+     
+        <h3 class="place-title">PLACE</h3>
+
+        <div class="place-panel">
+          <dl class="place-list">
+            <dd id="place-name"></dd>
+            <dd id="address"></dd>
+            <dd><a id="shop-link" href="">View Location Page</a></dd>
+          </dl>
+          
+
+          <div class="detail-map">
+            <img class="map-image" src="images/map.jpg" alt="場所周辺の地図">
+            <a
+              id="map-link"
+              class="detail-map-pin"
+              href=""
+              style="--pin-x: 70%; --pin-y: 63%;"
+              aria-label="Googleマップで場所を見る"
+            >
+              <span class="detail-map-pin-center" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+        <div class="introducer-panel">
+          <p id="comment"></p>
+          <p class="found-by">
+            <span>found by</span>
+            <span id="member-initials"></span>
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
