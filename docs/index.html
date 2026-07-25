@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior Collection</title>
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'pbc5qtm',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="page-transition.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="site-logo" href="index.html" aria-label="トップページへ">
+    <img src="images/logo/group_f_logowth.png" alt="group F">
+  </a>
+
+  <header class="hero">
+    <div class="hero-slideshow" aria-hidden="true">
+      <img class="top-image is-visible" src="images/top_image.jpg" alt="">
+      <img class="top-image" src="" alt="">
+    </div>
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-label="メニューを開く"
+      aria-expanded="false"
+      aria-controls="global-menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="global-menu" class="global-menu" aria-label="メインメニュー">
+      <a href="#about-title">ABOUT</a>
+      <a href="#collection-title">COLLECTION</a>
+    </nav>
+
+    <div class="hero-content">
+      <p class="hero-title">まちで見つけた、私たちのFinterior</p>
+      <a class="collection-link" href="#collection-title">
+        <span class="down-arrow" aria-hidden="true"></span>
+        <span>コレクションを見る</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="about" aria-labelledby="about-title">
+      <h1 id="about-title" class="section-title">ABOUT</h1>
+      <p class="about-text">
+        私たちはまちを歩く。<br>東京のまちは、たくさんの美しいインテリアと心に響くデザインに溢れている。<br>
+        私たちが出会い、胸打たれたもの、感じたこと。<br>
+        このサイトがあなたの新しい出会いを作れますように＿。
+      </p>
+    </section>
+
+    <section class="collection" aria-labelledby="collection-title">
+      <h2 id="collection-title" class="section-title">COLLECTION</h2>
+
+      <nav class="collection-grid" aria-label="コレクション一覧"></nav>
+    </section>
+    <section class="map" aria-label="インテリアマップ">
+      <img src="images/map.jpg" alt="インテリアがある場所の地図">
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-menu" aria-label="フッターメニュー">
+      <a class="footer-brand" href="index.html">Finterior</a>
+      <div class="footer-links">
+        <a href="index.html">TOP</a>
+        <a href="#about-title">ABOUT</a>
+        <a href="#collection-title">COLLECTION</a>
+      </div>
+    </nav>
+    <a>group F</a> 
+  </footer>
+</body>
+</html>
